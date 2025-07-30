@@ -83,7 +83,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(30, 60, 114, 0.85);
+      background: rgba(0, 0, 0, 0.8);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,17 +99,17 @@
     }
 
     .hire-popup-content {
-      background: #ffffff;
-      border-radius: 10px;
-      padding: 30px 25px;
-      max-width: 420px;
+      background: linear-gradient(135deg, #fff5e6 0%, #ffe4cc 100%);
+      border-radius: 20px;
+      padding: 35px 30px;
+      max-width: 450px;
       width: 90%;
       position: relative;
       text-align: center;
-      box-shadow: 0 20px 60px rgba(30, 60, 114, 0.3);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
       transform: scale(0.8);
       transition: transform 0.3s ease;
-      border: 3px solid #1e3c72;
+      border: 2px solid #ff6347;
     }
 
     .hire-popup-overlay.active .hire-popup-content {
@@ -120,10 +120,10 @@
       position: absolute;
       top: 15px;
       right: 20px;
-      background: none;
+      background: rgba(255, 99, 71, 0.1);
       border: none;
-      font-size: 24px;
-      color: #1e3c72;
+      font-size: 22px;
+      color: #ff6347;
       cursor: pointer;
       transition: all 0.3s ease;
       width: 35px;
@@ -136,59 +136,59 @@
     }
 
     .hire-popup-close:hover {
-      background: #f8f9fa;
+      background: rgba(255, 99, 71, 0.2);
       color: #dc3545;
-      transform: rotate(90deg);
     }
 
     .hire-popup-illustration {
-      width: 100px;
+      width: 120px;
       height: auto;
       margin: 0 auto 25px;
       display: block;
     }
 
     .hire-popup-title {
-      color: #1e3c72;
-      font-size: 18px;
+      color: #2c5aa0;
+      font-size: 20px;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      line-height: 1.3;
+      letter-spacing: 0.8px;
+      line-height: 1.2;
       font-family: 'Poppins', sans-serif;
     }
 
     .hire-popup-subtitle {
       color: #666;
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 25px;
-      line-height: 1.4;
+      line-height: 1.5;
       font-family: 'Poppins', sans-serif;
+      font-weight: 400;
     }
 
     .hire-popup-btn {
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      background: linear-gradient(135deg, #ff7f50 0%, #ff6347 100%);
       color: white;
       border: none;
-      padding: 14px 35px;
-      border-radius: 30px;
-      font-size: 14px;
+      padding: 15px 40px;
+      border-radius: 50px;
+      font-size: 16px;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 1px;
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none;
       display: inline-block;
-      box-shadow: 0 8px 25px rgba(30, 60, 114, 0.3);
+      box-shadow: 0 8px 25px rgba(255, 99, 71, 0.3);
       font-family: 'Poppins', sans-serif;
     }
 
     .hire-popup-btn:hover {
-      background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 35px rgba(30, 60, 114, 0.4);
+      background: linear-gradient(135deg, #ff6347 0%, #ff4500 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(255, 99, 71, 0.4);
       color: white;
       text-decoration: none;
     }
@@ -196,26 +196,26 @@
     /* Responsive Design */
     @media (max-width: 768px) {
       .hire-popup-content {
-        padding: 25px 20px;
-        max-width: 340px;
+        padding: 30px 25px;
+        max-width: 350px;
         margin: 20px;
       }
       
       .hire-popup-illustration {
-        width: 80px;
+        width: 100px;
       }
       
       .hire-popup-title {
-        font-size: 16px;
+        font-size: 18px;
       }
 
       .hire-popup-subtitle {
-        font-size: 13px;
+        font-size: 14px;
       }
 
       .hire-popup-btn {
-        padding: 12px 30px;
-        font-size: 13px;
+        padding: 14px 35px;
+        font-size: 15px;
       }
     }
 
@@ -286,39 +286,39 @@ https://templatemo.com/tm-545-finance-business
       <!-- Developer Team Icon -->
       <svg class="hire-popup-illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <!-- Background Circle -->
-        <circle cx="100" cy="100" r="85" fill="#f8f9fa" stroke="#1e3c72" stroke-width="3"/>
+        <circle cx="100" cy="100" r="85" fill="rgba(255, 255, 255, 0.3)" stroke="#ff6347" stroke-width="3"/>
         
         <!-- Team of Developers -->
         <!-- Developer 1 -->
         <circle cx="80" cy="75" r="15" fill="#FFE4B5"/>
         <path d="M65 65 Q80 55 95 65 Q95 75 80 75 Q65 75 65 65" fill="#8B4513"/>
-        <rect x="70" y="90" width="20" height="25" fill="#1e3c72" rx="5"/>
+        <rect x="70" y="90" width="20" height="25" fill="#ff6347" rx="5"/>
         
         <!-- Developer 2 -->
         <circle cx="120" cy="75" r="15" fill="#FFE4B5"/>
         <path d="M105 65 Q120 55 135 65 Q135 75 120 75 Q105 75 105 65" fill="#654321"/>
-        <rect x="110" y="90" width="20" height="25" fill="#2a5298" rx="5"/>
+        <rect x="110" y="90" width="20" height="25" fill="#ff7f50" rx="5"/>
         
         <!-- Laptop/Code -->
         <rect x="70" y="120" width="60" height="35" fill="#2F4F4F" rx="5"/>
         <rect x="75" y="125" width="50" height="25" fill="#87CEEB"/>
         
         <!-- Code Elements -->
-        <line x1="80" y1="130" x2="95" y2="130" stroke="#1e3c72" stroke-width="2"/>
-        <line x1="80" y1="135" x2="110" y2="135" stroke="#2a5298" stroke-width="2"/>
-        <line x1="80" y1="140" x2="100" y2="140" stroke="#1e3c72" stroke-width="2"/>
+        <line x1="80" y1="130" x2="95" y2="130" stroke="#ff6347" stroke-width="2"/>
+        <line x1="80" y1="135" x2="110" y2="135" stroke="#ff7f50" stroke-width="2"/>
+        <line x1="80" y1="140" x2="100" y2="140" stroke="#ff6347" stroke-width="2"/>
         
         <!-- Tech Icons -->
-        <text x="40" y="50" fill="#1e3c72" font-size="14" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
-        <text x="150" y="50" fill="#2a5298" font-size="12" font-family="monospace" font-weight="bold">{}</text>
-        <text x="50" y="170" fill="#1e3c72" font-size="10" font-family="Arial" font-weight="bold">DEV</text>
-        <text x="140" y="170" fill="#2a5298" font-size="10" font-family="Arial" font-weight="bold">CODE</text>
+        <text x="40" y="50" fill="#2c5aa0" font-size="14" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
+        <text x="150" y="50" fill="#ff6347" font-size="12" font-family="monospace" font-weight="bold">{}</text>
+        <text x="50" y="170" fill="#2c5aa0" font-size="10" font-family="Arial" font-weight="bold">DEV</text>
+        <text x="140" y="170" fill="#ff6347" font-size="10" font-family="Arial" font-weight="bold">CODE</text>
         
         <!-- Decorative Elements -->
-        <circle cx="45" cy="80" r="3" fill="#1e3c72"/>
-        <circle cx="155" cy="120" r="3" fill="#2a5298"/>
-        <circle cx="160" cy="80" r="2" fill="#1e3c72"/>
-        <circle cx="40" cy="130" r="2" fill="#2a5298"/>
+        <circle cx="45" cy="80" r="3" fill="#ff6347"/>
+        <circle cx="155" cy="120" r="3" fill="#ff7f50"/>
+        <circle cx="160" cy="80" r="2" fill="#2c5aa0"/>
+        <circle cx="40" cy="130" r="2" fill="#ff6347"/>
       </svg>
       
       <h3 class="hire-popup-title">Hire Our Qualified and Skilled Dedicated Developers!</h3>
@@ -1071,7 +1071,9 @@ https://templatemo.com/tm-545-finance-business
     // Handle escape key press
     function handleEscapeKey(e) {
       if (e.key === 'Escape' || e.keyCode === 27) {
-        closeHirePopup();
+        const popup = document.getElementById('hirePopup');
+        popup.classList.remove('active');
+        document.removeEventListener('keydown', handleEscapeKey);
       }
     }
 
