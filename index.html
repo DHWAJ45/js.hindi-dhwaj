@@ -83,7 +83,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(30, 60, 114, 0.85);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -99,17 +99,17 @@
     }
 
     .hire-popup-content {
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-      border-radius: 15px;
-      padding: 25px;
-      max-width: 400px;
-      width: 85%;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 30px 25px;
+      max-width: 420px;
+      width: 90%;
       position: relative;
       text-align: center;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 20px 60px rgba(30, 60, 114, 0.3);
       transform: scale(0.8);
       transition: transform 0.3s ease;
-      border: 2px solid rgba(255, 255, 255, 0.1);
+      border: 3px solid #1e3c72;
     }
 
     .hire-popup-overlay.active .hire-popup-content {
@@ -118,50 +118,61 @@
 
     .hire-popup-close {
       position: absolute;
-      top: 10px;
-      right: 15px;
-      background: rgba(255, 255, 255, 0.1);
+      top: 15px;
+      right: 20px;
+      background: none;
       border: none;
-      font-size: 20px;
-      color: #fff;
+      font-size: 24px;
+      color: #1e3c72;
       cursor: pointer;
       transition: all 0.3s ease;
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: bold;
     }
 
     .hire-popup-close:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background: #f8f9fa;
+      color: #dc3545;
       transform: rotate(90deg);
     }
 
     .hire-popup-illustration {
-      width: 120px;
+      width: 100px;
       height: auto;
-      margin: 0 auto 20px;
+      margin: 0 auto 25px;
       display: block;
     }
 
     .hire-popup-title {
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 600;
+      color: #1e3c72;
+      font-size: 18px;
+      font-weight: 700;
       margin-bottom: 20px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      line-height: 1.3;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hire-popup-subtitle {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
       line-height: 1.4;
+      font-family: 'Poppins', sans-serif;
     }
 
     .hire-popup-btn {
-      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
       color: white;
       border: none;
-      padding: 12px 30px;
-      border-radius: 25px;
+      padding: 14px 35px;
+      border-radius: 30px;
       font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
@@ -170,13 +181,14 @@
       transition: all 0.3s ease;
       text-decoration: none;
       display: inline-block;
-      box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+      box-shadow: 0 8px 25px rgba(30, 60, 114, 0.3);
+      font-family: 'Poppins', sans-serif;
     }
 
     .hire-popup-btn:hover {
-      background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+      background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(30, 60, 114, 0.4);
       color: white;
       text-decoration: none;
     }
@@ -184,20 +196,25 @@
     /* Responsive Design */
     @media (max-width: 768px) {
       .hire-popup-content {
-        padding: 20px 15px;
-        max-width: 320px;
+        padding: 25px 20px;
+        max-width: 340px;
+        margin: 20px;
       }
       
       .hire-popup-illustration {
-        width: 100px;
+        width: 80px;
       }
       
       .hire-popup-title {
-        font-size: 14px;
+        font-size: 16px;
+      }
+
+      .hire-popup-subtitle {
+        font-size: 13px;
       }
 
       .hire-popup-btn {
-        padding: 10px 25px;
+        padding: 12px 30px;
         font-size: 13px;
       }
     }
@@ -266,51 +283,47 @@ https://templatemo.com/tm-545-finance-business
     <div class="hire-popup-content">
       <button class="hire-popup-close" onclick="closeHirePopup()">&times;</button>
       
-      <!-- Developer Icon -->
+      <!-- Developer Team Icon -->
       <svg class="hire-popup-illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <!-- Background Circle -->
-        <circle cx="100" cy="100" r="90" fill="rgba(255, 255, 255, 0.1)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="2"/>
+        <circle cx="100" cy="100" r="85" fill="#f8f9fa" stroke="#1e3c72" stroke-width="3"/>
         
-        <!-- Person -->
-        <!-- Head -->
-        <circle cx="100" cy="70" r="20" fill="#FFE4B5"/>
+        <!-- Team of Developers -->
+        <!-- Developer 1 -->
+        <circle cx="80" cy="75" r="15" fill="#FFE4B5"/>
+        <path d="M65 65 Q80 55 95 65 Q95 75 80 75 Q65 75 65 65" fill="#8B4513"/>
+        <rect x="70" y="90" width="20" height="25" fill="#1e3c72" rx="5"/>
         
-        <!-- Hair -->
-        <path d="M80 60 Q100 45 120 60 Q120 75 100 75 Q80 75 80 60" fill="#8B4513"/>
+        <!-- Developer 2 -->
+        <circle cx="120" cy="75" r="15" fill="#FFE4B5"/>
+        <path d="M105 65 Q120 55 135 65 Q135 75 120 75 Q105 75 105 65" fill="#654321"/>
+        <rect x="110" y="90" width="20" height="25" fill="#2a5298" rx="5"/>
         
-        <!-- Glasses -->
-        <circle cx="92" cy="68" r="6" fill="none" stroke="#fff" stroke-width="2"/>
-        <circle cx="108" cy="68" r="6" fill="none" stroke="#fff" stroke-width="2"/>
-        <line x1="98" y1="68" x2="102" y2="68" stroke="#fff" stroke-width="2"/>
+        <!-- Laptop/Code -->
+        <rect x="70" y="120" width="60" height="35" fill="#2F4F4F" rx="5"/>
+        <rect x="75" y="125" width="50" height="25" fill="#87CEEB"/>
         
-        <!-- Body -->
-        <rect x="85" y="90" width="30" height="40" fill="#f093fb" rx="8"/>
+        <!-- Code Elements -->
+        <line x1="80" y1="130" x2="95" y2="130" stroke="#1e3c72" stroke-width="2"/>
+        <line x1="80" y1="135" x2="110" y2="135" stroke="#2a5298" stroke-width="2"/>
+        <line x1="80" y1="140" x2="100" y2="140" stroke="#1e3c72" stroke-width="2"/>
         
-        <!-- Arms -->
-        <rect x="70" y="95" width="15" height="25" fill="#f093fb" rx="7"/>
-        <rect x="115" y="95" width="15" height="25" fill="#f093fb" rx="7"/>
-        
-        <!-- Laptop -->
-        <rect x="75" y="125" width="50" height="30" fill="#2F4F4F" rx="3"/>
-        <rect x="78" y="128" width="44" height="20" fill="#87CEEB"/>
-        
-        <!-- Code lines on laptop -->
-        <line x1="82" y1="133" x2="95" y2="133" stroke="#f5576c" stroke-width="1"/>
-        <line x1="82" y1="137" x2="110" y2="137" stroke="#f093fb" stroke-width="1"/>
-        <line x1="82" y1="141" x2="100" y2="141" stroke="#f5576c" stroke-width="1"/>
-        
-        <!-- Floating Code Elements -->
-        <text x="130" y="50" fill="rgba(255, 255, 255, 0.6)" font-size="12" font-family="monospace">&lt;/&gt;</text>
-        <text x="40" y="80" fill="rgba(255, 255, 255, 0.6)" font-size="10" font-family="monospace">{}</text>
-        <text x="150" y="130" fill="rgba(255, 255, 255, 0.6)" font-size="8" font-family="monospace">dev</text>
+        <!-- Tech Icons -->
+        <text x="40" y="50" fill="#1e3c72" font-size="14" font-family="monospace" font-weight="bold">&lt;/&gt;</text>
+        <text x="150" y="50" fill="#2a5298" font-size="12" font-family="monospace" font-weight="bold">{}</text>
+        <text x="50" y="170" fill="#1e3c72" font-size="10" font-family="Arial" font-weight="bold">DEV</text>
+        <text x="140" y="170" fill="#2a5298" font-size="10" font-family="Arial" font-weight="bold">CODE</text>
         
         <!-- Decorative Elements -->
-        <circle cx="60" cy="50" r="3" fill="rgba(240, 147, 251, 0.5)"/>
-        <circle cx="140" cy="170" r="4" fill="rgba(245, 87, 108, 0.5)"/>
-        <circle cx="160" cy="60" r="2" fill="rgba(255, 255, 255, 0.4)"/>
+        <circle cx="45" cy="80" r="3" fill="#1e3c72"/>
+        <circle cx="155" cy="120" r="3" fill="#2a5298"/>
+        <circle cx="160" cy="80" r="2" fill="#1e3c72"/>
+        <circle cx="40" cy="130" r="2" fill="#2a5298"/>
       </svg>
       
       <h3 class="hire-popup-title">Hire Our Qualified and Skilled Dedicated Developers!</h3>
+      
+      <p class="hire-popup-subtitle">Transform your business vision into reality with our expert development team specializing in modern technologies.</p>
       
       <a href="contact.html" class="hire-popup-btn" onclick="closeHirePopup()">Contact Us</a>
     </div>
