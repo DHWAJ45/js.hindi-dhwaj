@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.epicbliss.tech/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 02 Nov 2023 11:28:46 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- POP UP CODE -->
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>EpicBliss</title>
+  <link rel="icon" type="image/x-icon" href="https://www.epicbliss.tech/assets/Front/img/Favicon.png">
+  <title>Hire Me Popup</title>
+
+  <!-- META TAG -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/General/upload/1547660320574.html">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link href="https://fonts.googleapis.com/css?family=RobotoSlab:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Epicbliss Soluitons">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <title>Epicbliss Soluitons</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Bundle JS (carousel, indicators, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-testimonials").owlCarousel({
+        loop: true,           // Continuously loop the carousel
+        margin: 30,           // Space between items
+        nav: true,            // Show navigation arrows
+        dots: true,           // Show navigation dots
+        responsive: {         // Define responsive behavior for different screen sizes
+          0: {              // For screens 0px and up (mobile)
+            items: 1      // Show 1 item
+          },
+          600: {            // For screens 600px and up (tablet)
+            items: 2      // Show 2 items
+          },
+          992: {            // For screens 992px and up (desktop)
+            items: 4      // Show 4 items
+          }
+        }
+      });
+    });
+  </script>
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <!-- Custom Popup Styles -->
+  <style>
+    /* Popup Modal Styles */
+    .hire-popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .hire-popup-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .hire-popup-content {
+      background: linear-gradient(135deg, #3F7E96 0%, #81AE34 100%);
+      border-radius: 15px;
+      padding: 25px;
+      max-width: 400px;
+      width: 85%;
+      position: relative;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transform: scale(0.8);
+      transition: transform 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hire-popup-overlay.active .hire-popup-content {
+      transform: scale(1);
+    }
+
+    .hire-popup-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      font-size: 20px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hire-popup-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hire-popup-illustration {
+      width: 120px;
+      height: auto;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .hire-popup-title {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.4;
+    }
+
+    .hire-popup-btn {
+      background: linear-gradient(135deg,#449CB9 0%, #FFFFFF 100%);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 15px rgba(6, 6, 6, 0.3);
+    }
+
+    .hire-popup-btn:hover {
+      background: linear-gradient(135deg,#449CB9 0%, #FFFFFF 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+.spaced-btn {
+  margin-right: 12px; /* adjust spacing as needed */
+}
+.spaced-btn:last-child {
+  margin-right: 0;
+}
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hire-popup-content {
+        padding: 20px 15px;
+        max-width: 320px;
+      }
+      
+      .hire-popup-illustration {
+        width: 100px;
+      }
+      
+      .hire-popup-title {
+        font-size: 14px;
+      }
+
+      .hire-popup-btn {
+        padding: 10px 25px;
+        font-size: 13px;
+      }
+    }
+
+    /* Remove indicators */
+    .carousel-indicators {
+      display: none;
+    }
+
+    /* Custom arrows */
+   .carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 2rem;
+  opacity: 1;
+  z-index: 5;
+}
+
+.carousel-control-prev {
+  left: 10px; /* Changed from -50px */
+}
+
+.carousel-control-next {
+  right: 10px; /* Changed from -50px */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  top: 55%; /* Shifted down from 50% */
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 2rem;
+  opacity: 1;
+  z-index: 5;
+}
+
+.carousel-control-prev i:hover,
+.carousel-control-next i:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+    /* Responsive fix for smaller screens */
+    @media (max-width: 768px) {
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+      }
+    }
+
+    /* Smooth scrolling styles */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* About Us hover effect */
+    .nav-link.about-us-link {
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-link.about-us-link:hover {
+      color: #007bff !important;
+      transform: translateY(-2px);
+    }
+
+    .nav-link.about-us-link::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link.about-us-link:hover::after {
+      width: 100%;
+    }
+    /* Mega Menu Container */
+/* Container styles */
+.mega-dropdown {
+  position: relative;
+}
+
+/* Trigger link */
+.mega-dropdown .nav-link {
+  /* padding: 30px 20px; */
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+  display: block;
+}
+
+/* Our Services link specific styles */
+.nav-link.services-link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link.services-link:hover {
+  color: #3F7E96 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.services-link:active,
+.nav-link.services-link.active {
+  color: #81AE34 !important;
+}
+
+.nav-link.services-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #3F7E96, #81AE34);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link.services-link:hover::after {
+  width: 100%;
+}
+
+/* Dropdown content */
+.mega-dropdown .mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Centers horizontally */
+  max-width: 90vw;
+  background: #ffffff;
+  border-top: 3px solid #3F7E96;;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px 60px;
+  display: none;
+  z-index: 999;
+}
+
+/* Show on hover */
+.mega-dropdown:hover .mega-menu {
+  display: block;
+}
+
+/* Row styling */
+.mega-menu .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+/* Columns */
+.mega-menu .col {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Headers */
+.mega-menu h5 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3F7E96;
+  margin-bottom: 12px;
+}
+
+/* Links */
+.mega-menu a {
+  display: block;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+
+.mega-menu a:hover {
+  color: #81AE34;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .mega-menu {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    border-top: none;
+  }
+
+  .mega-menu .row {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .mega-menu .col {
+    flex: 0 0 100%;
+    min-width: unset;
+  }
+  
+}
+  </style>
+
+  <!--
+Finance Business TemplateMo
+https://templatemo.com/tm-545-finance-business
+-->
+</head>
+
+<body>
+
+  <!-- Hire Me Popup -->
+  <div class="hire-popup-overlay" id="hirePopup">
+    <div class="hire-popup-content">
+      <button class="hire-popup-close" onclick="closeHirePopup()">&times;</button>
+      
+      <!-- Developer Image -->
+<img src="assets/images/image.png" alt="Developer Icon" class="hire-popup-illustration" style="width: 150px; height: auto;" />
+
+
+      <h3 class="hire-popup-title">Hire Our Qualified and Skilled Dedicated Developers!</h3>
+  <a href="contact.html" class="hire-popup-btn spaced-btn" onclick="closeHirePopup()">Contact Us</a>
+<a href="https://www.linkedin.com/company/epicbliss-solutions/" class="hire-popup-btn spaced-btn" onclick="closeHirePopup()">Follow Us</a>
+
+    </div>
+  </div>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- Header -->
+  <div class="sub-header">
+    <!-- LOGO OUTSIDE CONTAINER -->
+    <div class="top-left-logo">
+      <img src="assets/images/Epicbliss Logo.png" alt="EB" style="height: 60px; width: auto;" />
+    </div>
+
+    <!-- CONTAINER WITH CENTERED CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <ul class="left-info">
+            <!-- Remove logo here if duplicated -->
+            <li>
+              <a href="#top">Epicbliss Solutions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="right-icons">
+            <li><a href="https://www.linkedin.com/company/epicbliss-solutions/"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:info@epicbliss.tech"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#top">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="who-are-we" style="height: 90px; width: 144px; align-items: center;">
+              <a class="nav-link" href="#who-are-we">About Us</a>
+            </li>
+          </li>
+   <li class="nav-item mega-dropdown" style="position: relative;">
+  <a class="nav-link services-link" href="#services">Our Services</a>
+  <div class="mega-menu">
+    <div class="row">
+      <!-- Column 1 -->
+      <div class="col">
+        <h5><a href="#">MICROSOFT TECHNOLOGIES</a></h5>
+        <a>SharePoint Development</a>
+        <a>ASP.NET Development</a>
+        <a>Dynamics CMS Development</a>
+        <a>AX Development</a>
+        <a>Azure Development</a>
+        <a>Business Intelligence</a>
+        <a>PowerBI Development</a>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col">
+        <h5><a href="#">MOBILE DEVELOPMENT</a></h5>
+        <a>iPhone App /Android Development</a>
+        <a>Phone Gap App Development</a>
+        <a>Hybrid /Ionic App Development</a>
+        <a>React Native Development</a>
+        <a>Xamarin App Development</a>
+        <a>Progressive Web Apps</a>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col">
+        <h5><a href="#">ATLASSIAN</a></h5>
+        <a>Jira/Bitbucket/Confluence</a>
+        <a>Migration</a>
+        <a>Upgradation</a>
+        <a>Plugin Development</a>
+        <a>Customization</a>
+        <a>Automation</a>
+        <a>Renewal of Application Licenses</a>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col">
+        <h5><a href="#">CLOUD SERVICES</a></h5>
+        <a>DevOps</a>
+        <a>Amazon Web Services</a>
+        <a>Azure Cloud Service</a>
+        <a>Google App Engine Services</a>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Column 5 -->
+      <div class="col">
+        <h5><a href="#">BI & DATA VISUALIZATION</a></h5>
+        <a>Tableau Development</a>
+        <a>Pentaho Development</a>
+        <a>PowerBI</a>
+        <a>Jasper/Qlickview</a>
+        <a>Tibco Spotfire/Zoho reports</a>
+      </div>
+
+      <!-- Column 6 -->
+      <div class="col">
+        <h5><a href="#">WEB TECHNOLOGIES</a></h5>
+        <a>AngularJS/MEAN Stack</a>
+        <a>PHP Website Development</a>
+        <a>Phalcon/Laravel Development</a>
+        <a>WordPress /Symfony</a>
+        <a>Node.js & MongoDB</a>
+        <a>Full Stack Development</a>
+      </div>
+
+      <!-- Column 7 -->
+      <div class="col">
+        <h5><a href="#">MACHINE LEARNING</a></h5>
+        <a>Cognitive Insight</a>
+        <a>Cognitive Engagement</a>
+        <a>Cognitive Automation</a>
+        <a>Data Mining</a>
+        <a>Natural Language Processing</a>
+        <a>Robotic Process Automation</a>
+      </div>
+
+      <!-- Column 8 -->
+      <div class="col">
+        <h5><a href="#">ENTERPRISE SERVICES</a></h5>
+        <a>AR / VR</a>
+        <a>CRM</a>
+        <a>Enterprise Mobility Services</a>
+        <a>Blockchain Services</a>
+        <a>Digital Marketing</a>
+        <a>Gaming</a>
+        <a>IOT/Blockchain</a>
+      </div>
+    </div>
+  </div>
+</li>
+
+
+            <li class="nav-item" style="height: 90px; width: 144px; align-items: center;">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item" style="height: 90px; width: 144px; align-items: center;">
+              <a class="nav-link" href="events.html">Events</a>
+            <li class="nav-item" style="height: 90px; width: 144px; align-items: center;">
+              <a class="nav-link" href="careers.html">Careers</a>
+              <!--  <li class="nav-item" style="height: 90px; width: 100px;">
+              <a class="nav-link" href="one-page.html">One Page</a> -->
+            </li>
+            <li class="nav-item" style="height: 90px; width: 144px; align-items: center;">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <!-- Banner Starts Here -->
+  <div class="main-banner header-text" id="top">
+    <div class="Modern-Slider">
+      <!-- Item -->
+      <div class="item item-1">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>Power Platform & SharePoint Solutions</h6>
+            <h4>SharePoint & Power Platform Solutions <br>for Smarter Enterprises</h4>
+            <p>At EpicBliss, our expertise in Microsoft SharePoint, Power Platform, and business process automation
+              helps startups and enterprises achieve intelligent, data-driven decision-making.
+              We deliver tailored solutions that drive collaboration, optimize workflows, and enable full-scale
+              digital
+              transformation across your organization.</p>
+            <!-- <a href="contact.html" class="filled-button">contact us</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
+      <!-- Item -->
+      <div class="item item-2">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>Business Intelligence and Data Visualization Services</h6>
+            <h4>Power BI & Tableau-Driven BI Solutions <br>for Smarter Decisions</h4>
+            <p>EpicBliss helps startups and enterprises unlock insights through powerful BI tools like Power BI,
+              Tableau, Looker, QlikView, and more—transforming raw data into meaningful, actionable business
+              intelligence.</p>
+            <!-- <a href="services.html" class="filled-button">our services</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
+      <!-- Item -->
+      <div class="item item-3">
+        <div class="img-fill">
+          <div class="text-content">
+            <h6>Robotic Process Automation Services</h6>
+            <h4>RPA-Led Digital Solutions <br> Across Modern Tech Stacks</h4>
+            <p>EpicBliss empowers businesses through intelligent automation using RPA technologies (UiPath, Automation
+              Anywhere, Blue Prism), along with expertise in Microsoft Technologies, Business Intelligence tools
+              (Power
+              BI, Tableau, Qlik), ETL pipelines, Quality Assurance, Salesforce, Oracle, Mobile App Development, and
+              cloud platforms like AWS—delivering insights, efficiency, and scalable innovation.</p>
+            <!-- <a href="about.html" class="filled-button">learn more</a> -->
+          </div>
+        </div>
+      </div>
+      <!-- // Item -->
+    </div>
+  </div>
+  <!-- Banner Ends Here -->
+
+  <div class="request-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Welcome to Epicbliss Solutions– Your Partner in Digital Innovation</h2>
+          <span>Join global enterprises that trust EpicBliss to transform their business vision into reality with
+            cutting-edge, scalable, and future-ready IT solutions. From Microsoft SharePoint and Power Platform to
+            Business Intelligence (Power BI, Tableau), RPA, ETL, QA, Salesforce, Oracle, AWS, and Mobile App
+            Development, we bring the right technologies to fuel your success.<br>We go beyond expectations by
+            delivering
+            robust, performance-driven solutions that meet complex business needs across industries like finance,
+            healthcare, education, retail, technology, media, and more. <br>
+
+            Let's shape, refine, and launch your ideas into impactful digital solutions—built with passion, precision,
+            and purpose.</span>
+        </div>
+
+        <!-- START REVIEWS SECTION -->
+        <div class="col-md-4" id="clutchimage">
+          <div class="section-title text-center">
+            <h2>Reviews</h2>
+            <a href="https://www.designrush.com/agency/profile/epicbliss" alt="App Development Companies">
+              <img src="https://www.epicbliss.tech/assets/Front/images/Mobile.png" alt="Mobile Review"
+                style="max-width: 100%; height: auto; margin-bottom: 15px;">
+            </a>
+            <a href="https://clutch.co/profile/epicbliss-solutions#highlights" alt="App Development Companies">
+              <img src="https://www.epicbliss.tech/assets/Front/images/Clutch.png" alt="Clutch Review"
+                style="max-width: 100%; height: auto;">
+            </a>
+          </div>
+        </div>
+        <!-- / END REVIEWS SECTION -->
+      </div>
+
+      <!--    <div class="col-md-4">
+          <a href="contact.html" class="border-button">Contact Us</a>
+        </div> -->
+    </div>
+  </div>
+  </div>
+
+
+  <!-- / WHO ARE WE SECTION -->
+  <div class="more-info" id="who-are-we">
+    <div class="container">
+      <div class="section-heading text-center mb-4">
+        <h2>Who are<em> We</em></h2>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="left-image">
+                    <img src="assets/images/Banner 1 image.png" alt="EB" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <h2>Get to know about <em>Epicbliss Solutions</em></h2>
+                    <p>EpicBliss brings 16 years of proven expertise across diverse IT domains, delivering end-to-end
+                      solutions in information technology, consulting, and outsourcing services.
+                      <br>We specialize in modern technologies like Microsoft SharePoint, Power Platform, Power BI,
+                      Tableau,
+                      Qlik, Looker, ETL pipelines, RPA tools (UiPath, Automation Anywhere, Blue Prism), Salesforce,
+                      Oracle, Mobile App Development, Quality Assurance, and AWS cloud services.<br>
+                      Our tailored solutions cater to industries such as advertising, education, finance, healthcare,
+                      life
+                      sciences, hospitality, media, retail, real estate, sports, technology, non-profits, and
+                      more—empowering digital transformation and measurable success.
+                    </p>
+                    <!-- <a href="#" class="filled-button">Read More</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- / WHO ARE WE SECTION END -->
+
+
+  <!-- / OUR SERVICES SECTION -->
+  <!-- Bootstrap & Font Awesome CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <div class="services py-5 position-relative" id="services">
+    <div class="container">
+      <div class="section-heading text-center mb-4">
+        <h2>Our <em>Services</em></h2>
+        <p style="text-transform: none;">
+          <span>Epicbliss Solutions delivers cost-effective, scalable IT services tailored to your business needs.
+            We specialize in modern platforms like SharePoint, Power BI, RPA, Salesforce, and AWS.
+            Our expert team crafts efficient digital solutions that drive innovation and streamline operations.
+            From cloud migration to workflow automation, we empower organizations with future-ready technology.</span>
+        </p>
+      </div>
+      
+      <div id="servicesOwlCaruosel" class="owl-carousel">
+        <div class="service-item text-center">
+          <img src="assets/images/SliderImages/SharePoint-Symbol.png" alt="SharePoint" class="img-fluid mb-3">
+          <div class="down-content">
+            <h4>SharePoint Solutions</h4>
+            <p>Designing secure and modern intranet portals, workflows, and enterprise document management
+              with
+              Microsoft SharePoint.</p>
+            <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+          </div>
+        </div>
+        <div class="service-item text-center">
+         <img src="assets/images/SliderImages/BI.png" alt="BI" class="img-fluid mb-3">
+                  <div class="down-content">
+            <h4>BI & Data Visualization</h4>
+            <p>Unlock insights with Power BI, Tableau, Looker, Qlik and more BI tools for informed
+                      decision-making and impactful dashboards.</p>
+            <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+          </div>
+        </div>
+        <div class="service-item text-center">
+           <img src="assets/images/SliderImages/PowerPlatform.png" alt="Power Platform" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>Power Platform</h4>
+                    <p>"Build low-code apps and automate tasks with PowerApps, Power Automate, and Virtual Agents for
+                      smart business solutions."</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+        </div>
+        <div class="service-item text-center">
+             <img src="assets/images/SliderImages/salesforce.png" alt="Salesforce" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>Salesforce Services</h4>
+                    <p>Streamline CRM processes and accelerate sales with tailored Salesforce development, smooth
+                      integration, and trusted support.</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+        </div>
+        <div class="service-item text-center">
+          <div class="service-item text-center">
+                  <img src="assets/images/SliderImages/cloudMigration.png" alt="Cloud" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>Cloud Migration</h4>
+                    <p>Migrate infrastructure to AWS or Azure with minimal downtime, improved security, and maximum
+                      scalability for growth.</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+                </div>
+        </div>
+        <div class="service-item text-center">
+          <img src="assets/images/SliderImages/mobile.png" alt="Mobile App" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>Mobile App Development</h4>
+                    <p>Deliver iOS and Android apps with intuitive UX using native or hybrid tech tailored to your
+                      business goals and growth.</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+        </div>
+        <div class="service-item text-center">
+           <img src="assets/images/SliderImages/ETL.png" alt="ETL" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>ETL & Data Integration</h4>
+                    <p>Manage data pipelines using SSIS, Talend, and Apache NiFi to integrate, transform, and deliver
+                      business intelligence.</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+        </div>
+        <div class="service-item text-center">
+          <img src="assets/images/SliderImages/QA.png" alt="QA" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>Quality Assurance</h4>
+                    <p>Ensure your app is secure, stable, and reliable with manual, automated, and performance testing
+                      tailored to business needs.</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+        </div>
+                <div class="service-item text-center">
+                  <img src="assets/images/SliderImages/RPA.png" alt="RPA" class="img-fluid mb-3">
+                  <div class="down-content">
+                    <h4>RPA Automation</h4>
+                    <p>Automate routine processes using UiPath, Automation Anywhere, and Blue Prism to increase
+                      efficiency and accuracy.</p>
+                    <a href="#" class="filled-button btn btn-primary mt-2">Read More</a>
+                  </div>
+                </div>
+  </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- / OUR SERVICES SECTION ENDS-->
+
+  <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-content">
+            <span>Building Global Success Through Code, Creativity & Commitment.</span>
+            <h2>Our robust solutions for your <em>business growth</em></h2>
+            <p>At EpicBliss, we've proudly earned the trust of over 150 global clients by delivering more than 100
+              successful projects across industries. With 10,000 lines of clean, scalable code and 2000 cups of tea
+              fueling our passion, we turn bold ideas into high-performing digital solutions. Every project we build
+              reflects our precision, innovation, and unwavering commitment to excellence.
+            </p>
+            <!-- <a href="" class="filled-button">Read More</a> -->
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">150</div>
+                <div class="count-title">Global Clients Served</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">2000</div>
+                <div class="count-title">Cups of Tea</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">10000</div>
+                <div class="count-title">Lines of Code</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="count-area-content">
+                <div class="count-digit">100</div>
+                <div class="count-title">Projects Delivered</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Check Out Our <em>Portfolio</em></h2>
+            <span>We offer a diverse technology portfolio covering Microsoft SharePoint, Power Platform, and Power BI
+              for business automation.We deliver end-to-end digital transformation with modern technologies.</span>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="owl-testimonials owl-carousel">
+
+            <a href="https://www.epicbliss.tech/assets/Front/img/portfolio/Epicbliss_bi.pdf" class="testimonial-item">
+              <div class="inner-content text-center">
+
+                <!-- Image on top -->
+                <img src="assets\images\BrochureImages\BI.png" alt="BI Brochure Thumbnail"
+                  style="width: auto; height: auto; margin-bottom: 5px;" />
+
+                <h4>BI Brochure</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </a>
+
+
+            <a href="https://www.epicbliss.tech/assets/Front/img/portfolio/Epicbliss_microsoft.pdf"
+              class="testimonial-item">
+              <div class="inner-content">
+                <!-- Image on top -->
+                <img src="assets\images\BrochureImages\MS.png" alt="MS Thumbnail"
+                  style="width: 80px; height: auto; margin-bottom: 15px;" />
+                <h4>Microsoft Technologies</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </a>
+
+            <a href="https://www.epicbliss.tech/assets/Front/img/portfolio/Epicbliss_Corporatetraining.pdf"
+              class="testimonial-item">
+              <div class="inner-content">
+                <!-- Image on top -->
+                <img src="assets\images\BrochureImages\Train.png" alt="BI Brochure Thumbnail"
+                  style="width: 80px; height: auto; margin-bottom: 15px;" />
+                <h4>Corporate Training</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </a>
+
+            <a href="https://www.epicbliss.tech/assets/Front/img/portfolio/Epicbliss_PowerBI.pdf"
+              class="testimonial-item">
+              <div class="inner-content">
+                <!-- Image on top -->
+                <img src="assets\images\BrochureImages\PBI.png" alt="BI Brochure Thumbnail"
+                  style="width: 80px; height: auto; margin-bottom: 15px;" />
+                <h4>Power BI</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </a>
+
+            <a href="https://www.epicbliss.tech/assets/Front/img/portfolio/Epicbliss_Tableau.pdf"
+              class="testimonial-item">
+              <div class="inner-content">
+                <img src="assets\images\BrochureImages\Tableau.png" alt="BI Brochure Thumbnail"
+                  style="width: 80px; height: auto; margin-bottom: 15px;" />
+                <h4>Tableau</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </a>
+
+            <a href="https://www.epicbliss.tech/assets/Front/img/portfolio/Epicbliss_PowerApps.pdf"
+              class="testimonial-item">
+              <div class="inner-content">
+                <img src="assets\images\BrochureImages\PA.png" alt="BI Brochure Thumbnail"
+                  style="width: 80px; height: auto; margin-bottom: 15px;" />
+                <h4>PowerApps</h4>
+                <span></span>
+                <p></p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- / START REPORT DESIGN AREA -->
+  <div class="callback-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <!-- START SECTION TITLE DESIGN AREA -->
+            <div class="section-heading">
+              <h2>Live BI<em> Reports</em></h2>
+              <span>Check out our Interactive Reports of Power BI and Tabelau</span>
+              <!-- / END SECTION TITLE DESIGN AREA -->
+            </div>
+
+            <div class="row">
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/airport.jpg" />
+                    <div class="down-content">
+                      <h4>World Airports insights</h4>
+                      <p>Explore monthly sales revenue trends across global airports with this interactive Power BI
+                        report for actionable insights.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiMzdhNWIwYjQtY2VkMS00Nzc4LThhMDItNDFmZGU1ZjE3ZGUyIiwidCI6IjdhZGI1ZWRmLTdhMGUtNDk0ZC1iNGY4LWI0NmQwZmZiZTM1OSJ9&embedImagePlaceholder=true"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/supplier.jpg" />
+                    <div class="down-content">
+                      <h4>Suppliers Purchase</h4>
+                      <p>This Power BI interactive report highlights purchase activities performed by suppliers,
+                        offering clear business insights.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiZjRhYjY5YzctMWRiNy00YzgxLWEyYmQtYTIyOGYzOTkwNmUwIiwidCI6IjdhZGI1ZWRmLTdhMGUtNDk0ZC1iNGY4LWI0NmQwZmZiZTM1OSJ9&embedImagePlaceholder=true&pageName=ReportSection"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/Migration.jpg" />
+                    <div class="down-content">
+                      <h4>Migration insights</h4>
+                      <p>This Power BI report provides a global overview of migration trends, showing how people moved
+                        from one country to another.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiY2MxMWZiOTEtMDZiMS00OWU4LWIwZTMtMzIxM2QxYzIwYTcyIiwidCI6IjdhZGI1ZWRmLTdhMGUtNDk0ZC1iNGY4LWI0NmQwZmZiZTM1OSJ9&pageName=ReportSectionab8c9910253b5197db64"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/customer.jpg" />
+                    <div class="down-content">
+                      <h4>Customers Sales</h4>
+                      <p> This Power BI report shows yearly customer data, offering insights into trends, patterns,
+                        and
+                        changes in behavior over time.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiNDA2ZmY0ZGUtOWE5NS00Njc1LTlmZjMtZmZiMDQ1OGM3ZDYxIiwidCI6IjdhZGI1ZWRmLTdhMGUtNDk0ZC1iNGY4LWI0NmQwZmZiZTM1OSJ9&embedImagePlaceholder=true&pageName=ReportSection1"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/co2.jpg" />
+                    <div class="down-content">
+                      <h4>Customers Sales</h4>
+                      <p> This Power BI report displays CO₂ emissions by country and year, plus % changes in energy
+                        consumption and annual variation data.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiMzhjYzdjYTYtYThjYy00ZGM0LTliM2UtMDE5ZDYzN2Q1NWQwIiwidCI6IjdhZGI1ZWRmLTdhMGUtNDk0ZC1iNGY4LWI0NmQwZmZiZTM1OSJ9&pageName=ReportSectionb65c4c9c9d0eb3b7060c"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/SLA%20Dashboard.jpg" />
+                    <div class="down-content">
+                      <h4>SLA Dashboard</h4>
+                      <p> This Tableau report shows the percentage of tickets resolved within SLA, offering insights
+                        into resolution performance trends.</p>
+                      <a href="https://public.tableau.com/views/PhysiciansTracker/PhysiciansDetails?:language=en-US&:display_count=n&:origin=viz_share_link"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/Physician%20Dashboard.jpg" />
+                    <div class="down-content">
+                      <h4> Physician Dashboard</h4>
+                      <p> This Tableau report provides detailed insights for each physician in the hospital, enabling
+                        performance tracking and analysis.</p>
+                      <a href="https://public.tableau.com/views/PhysiciansTracker/PhysiciansDetails?:language=en-US&:display_count=n&:origin=viz_share_link"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 justify-content-center">
+                <div class="card-sl">
+                  <div class="service-item text-center">
+                    <img src="assets/images/BI Portfolio/Store.jpg" />
+                    <div class="down-content">
+                      <h4> Retail Store Analysis</h4>
+                      <p> This Power BI report simulates data analysis to uncover insights on boosting profits while
+                        effectively minimizing losses.</p>
+                      <a href="https://app.powerbi.com/view?r=eyJrIjoiZDZjMGZhMDMtMDBiYS00YWExLWFkNTYtZGViN2IyYzg3ZTM5IiwidCI6IjdhZGI1ZWRmLTdhMGUtNDk0ZC1iNGY4LWI0NmQwZmZiZTM1OSJ9&pageName=ReportSection"
+                        class="filled-button btn btn-primary mt-2">Interact Here</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / END REPORT DESIGN AREA -->
+
+  <!-- Footer Starts Here -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer-item">
+          <h4>Useful Links</h4>
+          <p>Reach us out from the below links.</p>
+          <ul class="social-icons">
+            <li><a href="mailto:info@epicbliss.tech"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/epicbliss-solutions/"><i
+                  class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li><a href="skype:epicbliss.tech?chat"><i class="fa fa-headphones"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-item">
+          <h4>Visit Us</h4>
+          <ul class="menu-list">
+            <li>
+              <strong>India</strong><br>
+              1110, Ganesh Glory, Jagatpur Road, Off. SG Highway,<br>
+              Near Nirma University, Ahmedabad, Gujarat 382481
+            </li>
+            <li>
+              <strong>USA</strong><br>
+              205, Henly Pl, Duluth, GA 30097
+            </li>
+            <li>
+              <strong>Canada</strong><br>
+              805 Yates Dr, Milton, ON L9T 0E6
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 footer-item last-item">
+          <h4>Contact Us</h4>
+          <p>Eager to know more? Drop a note; how can we help you today?</p>
+          <div class="contact-form">
+            <form id="contact footer-contact" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" pattern="[^ @]*@[^ @]*"
+                      placeholder="E-Mail Address" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
+                      required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; 2025 Epicbliss Solutions
+
+            <a rel="nofollow noopener" href="https://templatemo.com" target="_blank"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Additional Scripts -->
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/owl.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/accordions.js"></script>
+
+  <script language="text/Javascript">
+    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    function clearField(t) {                   //declaring the array outside of the
+      if (!cleared[t.id]) {                      // function makes it static and global
+        cleared[t.id] = 1;  // you could use true and false, but that's more typing
+        t.value = '';         // with more chance of typos
+        t.style.color = '#fff';
+      }
+    }
+  </script>
+
+  <!-- Popup JavaScript -->
+  <script>
+    // Show popup after page loads
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        showHirePopup();
+      }, 2000); // Show popup after 2 seconds
+    });
+
+    // Function to show popup
+    function showHirePopup() {
+      const popup = document.getElementById('hirePopup');
+      popup.classList.add('active');
+      
+      // Add escape key listener when popup is shown
+      document.addEventListener('keydown', handleEscapeKey);
+    }
+
+    // Function to close popup
+    function closeHirePopup() {
+      const popup = document.getElementById('hirePopup');
+      popup.classList.remove('active');
+      
+      // Remove escape key listener when popup is closed
+      document.removeEventListener('keydown', handleEscapeKey);
+    }
+
+    // Handle escape key press
+    function handleEscapeKey(e) {
+      if (e.key === 'Escape' || e.keyCode === 27) {
+        closeHirePopup();
+      }
+    }
+
+    // Close popup when clicking outside the modal content
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('hirePopup').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeHirePopup();
+        }
+      });
+    });
+
+    // Add click handler for services link to add active class
+    document.addEventListener('DOMContentLoaded', function() {
+      const servicesLink = document.querySelector('.services-link');
+      if (servicesLink) {
+        servicesLink.addEventListener('click', function(e) {
+          // Remove active class from all nav links
+          document.querySelectorAll('.nav-link').forEach(link => {
+            link.classList.remove('active');
+          });
+          
+          // Add active class to clicked services link
+          this.classList.add('active');
+        });
+      }
+
+      // Add smooth scrolling to all anchor links that start with #
+      const anchors = document.querySelectorAll('a[href^="#"]');
+      
+      anchors.forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            const headerHeight = 80; // Adjust for fixed header
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
