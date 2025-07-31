@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EpicBliss</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <!-- Navigation Container - This is where the navigation will be injected -->
+    <div id="navigation-container"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1>About EpicBliss</h1>
+            <p>Learn more about our company and mission</p>
+        </div>
+        
+        <div class="content-container">
+            <section class="about-section">
+                <h2>Our Story</h2>
+                <p>EpicBliss is a leading technology company that specializes in delivering innovative solutions across multiple platforms and technologies. Founded with the vision of transforming businesses through technology, we have been at the forefront of digital transformation for years.</p>
+                
+                <h2>Our Mission</h2>
+                <p>To provide cutting-edge technology solutions that empower businesses to achieve their goals and drive growth in the digital age.</p>
+                
+                <h2>Our Services</h2>
+                <p>We offer a comprehensive range of services including Microsoft Technologies, Mobile Development, Cloud Services, Machine Learning, and much more. Our expert team is dedicated to delivering high-quality solutions tailored to your specific needs.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Include the navigation component and dropdown functionality -->
+    <script src="dropdown.js"></script>
+    <script src="nav-component.js"></script>
+    
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .about-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            margin-top: 40px;
+        }
+        
+        .about-section h2:first-child {
+            margin-top: 0;
+        }
+        
+        .about-section p {
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 25px;
+        }
+    </style>
+</body>
+</html>
